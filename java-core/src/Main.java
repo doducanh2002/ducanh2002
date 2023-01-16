@@ -39,7 +39,7 @@ public class Main {
         System.out.printf("Dãy số chứa số 1 ở đầu hoặc số 3 ở cuối: ");
         for (int index = 0; index < length; index++) {
             if (searchNumber1AtTheTop(list.get(index)) == 1
-                    || searchNumber3AtTheEnd(list.get(index)) == 3) {// điều kiện để kiểm tra số đó
+                    || searchNumber3AtTheEnd(list.get(index)) == 3) {
                 System.out.printf(list.get(index) + " ");
             }
         }
