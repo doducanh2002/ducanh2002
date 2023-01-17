@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class ArrayNumberExercise {
 
     public static void main(String[] args) {
 
@@ -38,28 +38,14 @@ public class Main {
         System.out.println();
         System.out.printf("Dãy số chứa số 1 ở đầu hoặc số 3 ở cuối: ");
         for (int index = 0; index < length; index++) {
-            if (searchNumber1AtTheTop(list.get(index)) == 1 || searchNumber3AtTheEnd(list.get(index)) == 3) {
+            if ((list.get(index) %10 ) == 0  || searchNumber3AtTheEnd(list.get(index)) == 3) {
                 System.out.printf(list.get(index) + " ");
             }
         }
-
     }
 
     public static int searchNumber3AtTheEnd(int number) {
-
         int check = number % 10;
-        return check;
-
-    }
-
-    public static int searchNumber1AtTheTop(int number) {
-        int check = 0;
-
-        while (number > 0) {
-            check = number % 10;
-            number /= 10;
-        }
-
         return check;
     }
 }
