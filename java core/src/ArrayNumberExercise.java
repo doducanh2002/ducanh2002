@@ -6,6 +6,8 @@ public class ArrayNumberExercise {
 
         ArrayList<Integer> arrayList = new ArrayList<>();
         input(arrayList);
+        display(arrayList);
+        System.out.println();
         arrangeNumber(arrayList);
         display(arrayList);
     }
@@ -36,15 +38,15 @@ public class ArrayNumberExercise {
 
         }
         System.out.println();
-        System.out.printf("Dãy số chứa số 1 ở đầu hoặc số 3 ở cuối: ");
+        System.out.printf("Dãy số 3 ở cuối: ");
         for (int index = 0; index < length; index++) {
-            if ((list.get(index) %10 ) == 0  || searchNumber3AtTheEnd(list.get(index)) == 3) {
+            if ((list.get(index) %10 ) == 0  || searchNumber(list.get(index)) == 3) {
                 System.out.printf(list.get(index) + " ");
             }
         }
     }
 
-    public static int searchNumber3AtTheEnd(int number) {
+    public static int searchNumber(int number) {
         int check = number % 10;
         return check;
     }
